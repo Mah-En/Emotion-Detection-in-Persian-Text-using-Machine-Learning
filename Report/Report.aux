@@ -1,26 +1,48 @@
 \relax 
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\babel@aux{english}{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Data Preprocessing}{1}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Loading and Normalization}{1}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Cleaning}{1}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset and Pre-processing}{2}{section.2}\protected@file@percent }
+\newlabel{sec:data}{{2}{2}{Dataset and Pre-processing}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Raw Corpus}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Normalization and Cleaning}{2}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Feature Engineering}{2}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Exploratory Data Analysis (EDA)}{2}{section.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Class Distribution}}{2}{figure.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Exploratory Data Analysis}{2}{section.3}\protected@file@percent }
+\newlabel{sec:eda}{{3}{2}{Exploratory Data Analysis}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Class Distribution}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Label frequencies in the training split. Color shading alternates only for readability.}}{3}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:classdist}{{1}{2}{Class Distribution}{figure.caption.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Word Frequency in Texts (Count > 100)}}{3}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:wordfreq}{{2}{3}{Word Frequency in Texts (Count > 100)}{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Modeling and Classification}{3}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Model Evaluation}{3}{section.5}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Evaluation Report (Logistic Regression)}}{3}{table.caption.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Error Analysis}{4}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Class Imbalance}{4}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Feature Limitation}{4}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Model Monitoring and Boosting}{4}{section.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Training and Validation Error over Boosting Rounds}}{4}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:boosting}{{3}{4}{Training and Validation Error over Boosting Rounds}{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion and Future Work}{4}{section.8}\protected@file@percent }
-\gdef \@abspage@last{5}
+\newlabel{fig:classdist}{{1}{3}{Label frequencies in the training split. Color shading alternates only for readability}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Lexical Statistics}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Token frequency with logarithmic y-axis truncation for clarity.}}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:wordfreq}{{2}{3}{Token frequency with logarithmic y-axis truncation for clarity}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Modelling Methodology}{4}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{4}{Modelling Methodology}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Train/Validation Protocol}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Baseline Classifier: Logistic Regression}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ensemble Extension: XGBoost}{4}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Learning curves (mean ± sd over CV folds) highlight diminishing returns and slight over-fit.}}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:boosting}{{3}{5}{Learning curves (mean ± sd over CV folds) highlight diminishing returns and slight over-fit}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{5}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{5}{Results}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Quantitative Evaluation}{5}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Macro-averaged metrics on the held-out split.}}{5}{table.caption.4}\protected@file@percent }
+\newlabel{tab:metrics}{{1}{5}{Macro-averaged metrics on the held-out split}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Class-Wise Breakdown}{5}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Per-class scores for XGBoost.}}{6}{table.caption.5}\protected@file@percent }
+\newlabel{tab:detailed}{{2}{6}{Per-class scores for XGBoost}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{6}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{6}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Why Does Boosting Help?}{6}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Limitations}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Opportunities for Improvement}{6}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{6}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion}{{7}{6}{Conclusion}{section.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Software Environment}{7}{appendix.A}\protected@file@percent }
+\newlabel{app:env}{{A}{7}{Software Environment}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Assignment Requirements Checklist}{7}{appendix.B}\protected@file@percent }
+\gdef \@abspage@last{7}
