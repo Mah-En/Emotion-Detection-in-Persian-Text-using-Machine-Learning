@@ -1,0 +1,27 @@
+Data Cleaning Steps:
+- Loaded the dataset
+- Normalized the text
+- Removed punctuation, numbers, and special characters
+- Tokenized the text into words
+- Removed stopwords
+
+Feature Engineering Steps:
+- Vectorized text using TF-IDF
+- Encoded labels using LabelEncoder
+
+Model Training Steps:
+- Split data into training and test sets
+- Trained a Logistic Regression classifier
+
+Evaluation Results:
+              precision    recall  f1-score   support
+
+       ANGRY       0.00      0.00      0.00       185
+        FEAR       0.00      0.00      0.00        66
+       HAPPY       0.31      0.98      0.47       306
+       OTHER       0.71      0.04      0.08       267
+         SAD       0.00      0.00      0.00       161
+
+    accuracy                           0.32       985
+   macro avg       0.20      0.21      0.11       985
+weighted avg       0.29      0.32      0.17       985
