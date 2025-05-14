@@ -1,12 +1,12 @@
 # Emotion Detection in Persian Text: A Classical Machine-Learning Baseline
 
-## 📘 Overview
+## Overview
 
 This project implements a **classical machine-learning pipeline** to detect five basic emotions in Persian (Farsi) social media text: `HAPPY`, `SAD`, `ANGRY`, `FEAR`, and `OTHER`. The goal is to establish a **transparent and reproducible baseline** using non-neural models like Logistic Regression and XGBoost.
 
 While deep learning models dominate emotion detection in resource-rich languages, this work focuses on **low-resource settings**, where computation and labeled data are limited.
 
-## 📊 Dataset
+## Dataset
 
 - ~4,200 manually labeled Persian sentences
 - Each text labeled with exactly one emotion
@@ -14,7 +14,7 @@ While deep learning models dominate emotion detection in resource-rich languages
   - 80% Training
   - 20% Test (internal)
 
-## ⚙️ Preprocessing
+## Preprocessing
 
 - Unicode normalization
 - Removal of URLs, punctuation, digits, etc.
@@ -22,7 +22,7 @@ While deep learning models dominate emotion detection in resource-rich languages
 - Stop-word filtering (2–4 grams)
 - Rejoined tokens for vectorization
 
-## 🧪 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 ### Word Frequency (`freq > 100`)
 ![Word Frequency](output.png)
@@ -37,7 +37,7 @@ While deep learning models dominate emotion detection in resource-rich languages
 - `FEAR` is severely underrepresented (<6%)
 - Imbalance motivates macro-averaged metrics
 
-## 🤖 Modeling Approach
+## Modeling Approach
 
 ### 1. Logistic Regression (Baseline)
 - TF–IDF vectorization
@@ -61,7 +61,7 @@ While deep learning models dominate emotion detection in resource-rich languages
 - Boosting shows clear improvement over time
 - Slight overfitting after round 70+
 
-## 📈 Results
+## Results
 
 | Model              | Precision | Recall | F1-score |
 |-------------------|-----------|--------|----------|
@@ -71,7 +71,7 @@ While deep learning models dominate emotion detection in resource-rich languages
 - Boosting improves F1-score **by over 3×**
 - FEAR class remains challenging due to low support
 
-## 🧠 Key Takeaways
+## Key Takeaways
 
 - **XGBoost outperforms** the linear model by learning non-linear feature interactions
 - Imbalance and feature sparsity are key limitations
@@ -79,14 +79,14 @@ While deep learning models dominate emotion detection in resource-rich languages
   - Resource-constrained environments
   - Educational benchmarks
 
-## 🛠️ Software Environment
+## Software Environment
 
 - Python 3.11.4
 - scikit-learn 1.5
 - XGBoost 2.0
 - Hazm 0.9.0
 
-## 📂 Structure
+## Structure
 
 ```
 ├── data/                  # Contains labeled Persian text
@@ -100,14 +100,14 @@ While deep learning models dominate emotion detection in resource-rich languages
 ├── README.md              # This file
 ```
 
-## 📌 Future Improvements
+## Future Improvements
 
 1. Fine-tune multilingual transformers (e.g., XLM-R, mBERT)
 2. Embed emojis or convert them to textual emotions
 3. Curriculum learning: binary → multi-class
 4. Address imbalance using SMOTE or weighted loss
 
-## 📎 Citation
+## Citation
 
 > Mahla Entezari, Shahid Beheshti University (June 2024)  
 > *Emotion Detection in Persian Text: A Classical Machine-Learning Baseline*
