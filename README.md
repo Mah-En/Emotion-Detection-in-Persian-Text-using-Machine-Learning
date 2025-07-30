@@ -109,7 +109,6 @@ While deep learning models dominate emotion detection in resource-rich languages
 
 ## Citation
 
-> Mahla Entezari, Shahid Beheshti University (June 2024)  
 > *Emotion Detection in Persian Text: A Classical Machine-Learning Baseline*
 
 ---
